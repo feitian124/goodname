@@ -4,10 +4,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * chinese char
  */
 public class Char {
+	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	private static final int UNICODE_MIN = 19968;
 	
@@ -18,7 +22,6 @@ public class Char {
 	public void execute(String fileName) throws IOException {
 		File f = new File(fileName);
 		FileWriter fw = new FileWriter(f);
-		System.out.println("FileWriter getEncoding: " + fw.getEncoding());
 		
 		fw.write("char, Unicode-10, Unicode-16, GBK-10, GBK-16" + CR);
 
@@ -31,7 +34,8 @@ public class Char {
 		fw.flush();
 		fw.close();
 		
-		System.out.println(f.getAbsolutePath());
+		logger.info("FileWriter getEncoding: " + fw.getEncoding());
+		logger.info(f.getAbsolutePath());
 	}
 
 	private int getGBKCode(int unicode) throws UnsupportedEncodingException {
