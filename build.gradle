@@ -3,6 +3,8 @@ buildscript {
 		springBootVersion = '1.5.1.RELEASE'
 	}
 	repositories {
+		maven { url 'http://maven.aliyun.com/nexus/content/repositories/central/' }
+		jcenter()
 		mavenCentral()
 	}
 	dependencies {
