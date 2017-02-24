@@ -1,4 +1,4 @@
-package com.yunnuy;
+package com.yunnuy.goodname;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

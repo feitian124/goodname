@@ -1,4 +1,4 @@
-package bookmarks;
+package com.yunnuy.goodname.bookmarks;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

@@ -1,4 +1,4 @@
-package bookmarks;
+package com.yunnuy.goodname.bookmarks;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;

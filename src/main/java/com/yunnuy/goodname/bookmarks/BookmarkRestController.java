@@ -1,4 +1,4 @@
-package bookmarks;
+package com.yunnuy.goodname.bookmarks;
 
 import java.net.URI;
 import java.util.Collection;

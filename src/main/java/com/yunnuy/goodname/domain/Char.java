@@ -1,3 +1,4 @@
+package com.yunnuy.goodname.domain;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -19,7 +20,7 @@ public class Char {
 		FileWriter fw = new FileWriter(f);
 		System.out.println("FileWriter getEncoding: " + fw.getEncoding());
 		
-		fw.write("字符, Unicode十进制, Unicode十六进制, GBK十进制, GBK十六进制" + CR);
+		fw.write("char, Unicode-10, Unicode-16, GBK-10, GBK-16" + CR);
 
 		for (int i = UNICODE_MIN; i <= UNICODE_MAX; i++) {
 			int gbkCode = getGBKCode(i);
@@ -44,6 +45,6 @@ public class Char {
 	}
 
 	public static void main(String[] args) throws Exception {
-		new Char().execute("汉字编码一览表.txt");
+		new Char().execute("chinese_char_code_numbers.txt");
 	}
 }

@@ -1,4 +1,4 @@
-package bookmarks;
+package com.yunnuy.goodname.bookmarks;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
