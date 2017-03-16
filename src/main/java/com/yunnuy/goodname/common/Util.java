@@ -1,4 +1,5 @@
-package com.yunnuy.goodname.domain;
+package com.yunnuy.goodname.common;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -7,11 +8,8 @@ import java.io.UnsupportedEncodingException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * chinese char
- */
-public class Char {
-	private final Logger logger = LoggerFactory.getLogger(this.getClass());
+public class Util {
+private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	private static final int UNICODE_MIN = 19968;
 	
@@ -19,7 +17,7 @@ public class Char {
 	
 	private static final String CR = System.getProperty("line.separator");
 	
-	public void execute(String fileName) throws IOException {
+	private void execute(String fileName) throws IOException {
 		File f = new File(fileName);
 		FileWriter fw = new FileWriter(f);
 		
@@ -49,6 +47,6 @@ public class Char {
 	}
 
 	public static void main(String[] args) throws Exception {
-		new Char().execute("chinese_char_code_numbers.txt");
+		new Util().execute("chinese_char_code_numbers.txt");
 	}
 }

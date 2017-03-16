@@ -1,4 +1,4 @@
-package com.yunnuy.goodname.bookmarks;
+package com.yunnuy.goodname.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
